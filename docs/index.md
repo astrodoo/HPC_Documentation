@@ -2,11 +2,13 @@
 <link rel="stylesheet" href="assets/stylesheets/images.css">
 
 
-<!-- <img class="img-right" src="assets/images/home/uofa_cactus_computing3.png" title="Computing cactus" alt="cactus" width="300px" style="margin: 10px;"> -->
+<img class="img-right" src="assets/images/home/argon_ITF.png" title="Argon HPC" width="300px" style="margin: 20px;">
 
 ## Introduction
 
-The University of Iowa supports our researchers and their external collaborators with supercomputing resources. The information and Techonology Services (ITS) at the University operates High Performance Computing (HPC) cluster, called **Argon**, Interactive Data Analytic Service (**IDAS**), and Storage Services. 
+The University of Iowa supports researchers and their external collaborators by providing access to advanced supercomputing resources. Information Technology Services (ITS) operates several key systems, including the **Argon High Performance Computing (HPC) cluster**, the **Interactive Data Analytic Service (IDAS)**, and a variety of Storage Services.
+
+In addition to the comprehensive [Argon wiki pages](https://uiowa.atlassian.net/wiki/spaces/hpcdocs/overview?homepageId=76513285), this site is designed to help users effectively utilize HPC resources for computational research projects. If you have any questions or feedback about the content of this site, please [contact us](mailto:research-computing@uiowa.edu). 
 
 
 ## News
