@@ -34,7 +34,9 @@ nav:
   
   - Workshops: 
     - Overview: workshops/overview/index.md
-    - Linux Workshop Materials: workshops/Basic_Linux/index.md
+    - Linux Workshop Materials: 
+      - Commands: workshops/Basic_Linux/commands/index.md
+      - Editors: workshops/Basic_Linux/editors/index.md
     - HPC Workshop Materials: workshops/Intro_HPC/index.md
 
 markdown_extensions:
