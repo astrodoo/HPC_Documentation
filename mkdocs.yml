@@ -1,0 +1,123 @@
+site_name: UIowa HPC Documentation
+repo_url: https://github.com/soon_to_be_connected
+
+
+nav:
+  - Home: index.md
+  - Getting Started HPC: 
+    - Overview: get_started/overview/index.md
+
+  - Resources:
+    - Compute Resources: resources/compute_resources/index.md
+
+  - Access:
+    - System Access: access/system_access/index.md
+    
+  - Software:
+    - Overview: software/overview/index.md
+    - Modules: software/modules/index.md
+    - User Installations: software/user_installations/index.md
+    - Popular Software:
+      - Python: software/popular_software/python/index.md
+      - R: software/popular_software/R/index.md
+    - Containers: 
+      - Containers on HPC: software/containers/containers_on_hpc/index.md
+
+  - Running Jobs:
+    - Overview: running_jobs/overview/index.md
+    - Batch Jobs:
+      - Intro to Batch: running_jobs/batch_jobs/basic/index.md
+
+  - Support:
+    - ACCESS Application: support/nsf_access/index.md
+    - Consultation: support/consultation/index.md
+  
+  - Workshops: 
+    - Overview: workshops/overview/index.md
+    - Linux Workshop Materials: workshops/Basic_Linux/index.md
+    - HPC Workshop Materials: workshops/Intro_HPC/index.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - attr_list
+  - def_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.keys
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - tables
+  - abbr
+  - pymdownx.snippets
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      #clickable_checkbox: true
+
+  
+extra_javascript:
+  - assets/javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+ 
+extra_css:
+    - assets/stylesheets/extra.css
+    - assets/stylesheets/admonitions.css
+
+theme:
+  name: material
+  logo: assets/images/home/TOP-IOWA-Black-Tab-ffcd00.png
+  custom_dir: docs/overrides
+  favicon: assets/images/favicon.ico
+  palette:
+    primary: custom
+    accent: custom
+  icon: 
+    annotation: material/star-four-points-circle
+
+  features:
+    - navigation.tracking
+    - navigation.instant
+    - navigation.path
+    - toc.integrate
+    - content.tabs.link
+    - content.tooltips
+    - content.code.copy
+    - content.code.annotate
+    - content.code.select
+    - navigation.top
+    #- announce.dismiss
+
+plugins:
+  - blog:
+      post_excerpt: optional
+  - search
+
+extra:
+  generator: false
+  social:
+    - icon: material/email
+      link: mailto:research-computing@uiowa.edu
+      name: Contact HPC consulting
+    - icon: material/wikipedia
+      link: https://uiowa.atlassian.net/wiki/spaces/hpcdocs/overview
+      name: HPC Wiki Manual
+    - icon: material/chart-areaspline
+      link: 
+      name: HPC job metrics
+
+copyright: ITS Research Services, University of Iowa
+

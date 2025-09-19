@@ -1,2 +1,1 @@
-# HPC_Documentation
-UIowa HPC Documentation
+# Univeristy of Iowa HPC Documentation
