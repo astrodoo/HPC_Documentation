@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="assets/stylesheets/images.css">
 
 
-<img class="img-right" src="assets/images/home/argon_ITF.png" title="Argon HPC" width="300px" style="margin: 20px;">
+<img class="img-right" src="assets/images/home/argon_ITF.png" title="Argon HPC" width="400px" style="margin: 30px;">
 
 ## Introduction
 
