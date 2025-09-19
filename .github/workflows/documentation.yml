@@ -23,7 +23,7 @@ jobs:
 
       - name: Build documentation
         run: |
-          mkdocs build _site
+          mkdocs build -d _site
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
