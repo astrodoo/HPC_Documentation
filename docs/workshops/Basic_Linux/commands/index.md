@@ -1,6 +1,5 @@
-<link rel="stylesheet" href="../../assets/stylesheets/animated_dropdown.css">
-<link rel="stylesheet" href="../../assets/stylesheets/spacing.css">
 # Getting started with Linux Command Line using Argon
+In this page, the essential Linux commands are listed. You can exercise all commands below on the Argon cluster.
 
 
 ## First helpers
