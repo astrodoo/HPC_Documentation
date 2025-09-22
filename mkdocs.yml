@@ -118,7 +118,7 @@ extra:
       link: https://uiowa.atlassian.net/wiki/spaces/hpcdocs/overview
       name: HPC Wiki Manual
     - icon: material/chart-areaspline
-      link: 
+      link: https://xdmod.hpc.uiowa.edu/
       name: HPC job metrics
 
 copyright: ITS Research Services, University of Iowa
