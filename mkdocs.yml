@@ -11,9 +11,6 @@ nav:
   - Resources:
     - Compute Resources: resources/compute_resources/index.md
 
-  - Access:
-    - System Access: access/system_access/index.md
-    
   - Software:
     - Overview: software/overview/index.md
     - Modules: software/modules/index.md
