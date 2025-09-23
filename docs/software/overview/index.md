@@ -54,7 +54,7 @@ If the software uses a license not on the approved list—even if it is free or 
   <p> In such cases, deployment may still be possible, but only after defining and approving an appropriate <b>access control strategy</b>.</p>
   </div>
 
-  <script src="../../../assets/javascripts/animated_dropdown.js"></script>
+  <script src="../../assets/javascripts/animated_dropdown.js"></script>
 </html>
 
 
