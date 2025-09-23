@@ -1,12 +1,13 @@
 :root {
-    --md-primary-fg-color: #FFCD00;
+    --md-primary-fg-color: #B8860B;
     --md-accent-fg-color: #376DE1;
 }
 
 
 /* For Material theme top banner title */
-.md-header__title {
+.md-header {
     color: black;
+	background-color: #FFCD00;
 }
 
 .md-banner {
