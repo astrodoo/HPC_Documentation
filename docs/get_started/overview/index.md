@@ -18,7 +18,7 @@ An HPC cluster typically includes:
 
 ## What is a Scheduler?
 
-A scheduler is a software tool that manages and fairly distributes cluster resources among users. It works in tandem with a queuing system, which organizes jobs based on available resources or user access.
+A scheduler is a <mark> software tool that manages and fairly distributes cluster resources among users.</mark> It works in tandem with a queuing system, which organizes jobs based on available resources or user access.
 
 Schedulers allow users to select:
 

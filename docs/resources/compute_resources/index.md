@@ -42,7 +42,7 @@ Most nodes in the **LC data center** are connected via **OmniPath** high-speed i
 
 ## Heterogeneity
 
-Unlike previous HPC systems at the University of Iowa, which were largely homogeneous, **Argon is a heterogeneous cluster** with a wide mix of compute node types. This includes variability in both **GPU accelerators** and **CPU architectures**.
+Unlike previous HPC systems at the University of Iowa, which were largely homogeneous, <mark> **Argon is a heterogeneous cluster** with a wide mix of compute node types. This includes variability in both **GPU accelerators** and **CPU architectures**.</mark>
 
 ## CPU Architecture and AVX Capabilities
 
