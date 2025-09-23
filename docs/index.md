@@ -11,6 +11,8 @@ The University of Iowa supports researchers and their external collaborators by 
 In addition to the comprehensive [Argon wiki pages](https://uiowa.atlassian.net/wiki/spaces/hpcdocs/overview?homepageId=76513285), this site is designed to help users effectively utilize HPC resources for computational research projects. If you have any questions or feedback about the content of this site, please [contact us](mailto:research-computing@uiowa.edu). 
 
 
+---
+
 ## News
 
 <div class="grid cards" markdown>
@@ -44,6 +46,8 @@ In addition to the comprehensive [Argon wiki pages](https://uiowa.atlassian.net/
 
 
 </div>
+
+---
 
 ## Featured links for Research Services
 
@@ -84,7 +88,7 @@ and collaborative data analytics workflows involving RStudio, Jupyter Notebooks,
 <p style="margin-top: -0.7em; margin-bottom: 0em; margin-left: 3.4em;"> Comprehensive information about how to utilize Argon cluster</p>
 
 
-
+---
 
 ## Acknowledgements
 
