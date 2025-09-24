@@ -9,7 +9,7 @@ The standard method for accessing Argon is via **SSH (Secure Shell)**. You’ll 
 ### On Campus or Connected via VPN
 
 ```bash
-ssh HawkID@argon.hpc.uiowa.edu
+user@local ~> ssh HawkID@argon.hpc.uiowa.edu
 ```
 
 ### Off Campus Without VPN
@@ -17,7 +17,7 @@ ssh HawkID@argon.hpc.uiowa.edu
 To enhance security, Argon uses an alternate SSH port when accessed from outside the campus network without VPN:
 
 ```bash
-ssh -p 40 HawkID@argon.hpc.uiowa.edu
+user@local ~> ssh -p 40 HawkID@argon.hpc.uiowa.edu
 ```
 
 !!! info 
