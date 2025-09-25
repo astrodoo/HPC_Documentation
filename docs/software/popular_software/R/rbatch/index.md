@@ -15,8 +15,8 @@ $ Rscript my/scripts/program.R inputDataSet123.txt > output123.txt
 You can do the same on Argon by composing a job script that loads the appropriate R modules:
 
 ```bash
-module load stack/2020.1
-module load r/3.6.2_intel-19.0.5.281
+module reset
+module load r
 cd path/to/dataSet123
 Rscript my/scripts/program.R inputDataSet123.txt > output123.txt
 ```
@@ -28,8 +28,8 @@ Rscript my/scripts/program.R inputDataSet123.txt > output123.txt
     #$ -j y
     #$ -o /localscratch
     
-    module load stack/2020.1
-    module load r/3.6.2_intel-19.0.5.281
+    module reset
+    module load r
     cd path/to/dataSet123
     Rscript my/scripts/program.R inputDataSet123.txt
     mv $SGE_STDOUT_PATH .
