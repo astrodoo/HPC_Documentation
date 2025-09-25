@@ -17,7 +17,9 @@ nav:
     - User Installations: software/user_installations/index.md
     - Popular Software:
       - Python: software/popular_software/python/index.md
-      - R: software/popular_software/R/index.md
+      - R: 
+        - Personal Library: software/popular_software/R/rlibrary/index.md
+        - Batch Jobs: software/popular_software/R/rbatch/index.md
     - Containers: 
       - Containers on HPC: software/containers/containers_on_hpc/index.md
 
