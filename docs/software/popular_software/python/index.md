@@ -143,3 +143,148 @@ Follow steps below to create a virtual environment and install packages:
     !!! tip 
         To use the virtual environment in a cluster job script, simply activate it there the same way.
 
+
+
+---
+
+
+## Using Conda on HPC Systems
+
+**Conda** is a popular tool for installing Python software along with its dependencies and managing virtual environments, especially on personal laptops or workstations.
+
+You can install Conda via:
+
+- **Miniconda**: A minimal installer that sets up the base Conda system, allowing you to install only the packages you need.
+- **Anaconda**: A larger installer that includes the base Conda system plus a wide selection of commonly used scientific packages.
+
+For more details, refer to the [Conda User Guide](https://docs.conda.io/projects/conda/en/latest/user-guide/index.html)
+
+Conda provides functionality similar to what’s already available in the HPC environment, such as:
+
+- Python installations
+- Package management via `pip`
+- Virtual environment support via `virtualenv`
+
+While it’s possible to install Conda in your **home directory** or a **shared group drive**, it operates independently of the HPC module system. If you need specific Python packages not currently available in the HPC environment, consider requesting them from HPC staff before installing Conda yourself.
+
+!!! danger "Important"
+    A default Anaconda installation includes software that can interfere with graphical logins (e.g., FastX) by overriding system paths. See [this workaround](https://uiowa.atlassian.net/wiki/spaces/hpcdocs/pages/76513422/FastX+connections).
+
+
+### Installing Anaconda on Argon
+
+1. Download the installer from the Anaconda archive
+
+    ```bash
+    $ curl -RLO https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
+    ```
+
+2. Execute the installer
+
+    ```bash
+    $ bash Anaconda3-2024.10-1-Linux-x86_64.sh
+    ```
+
+    During installation, you’ll be asked whether to modify your shell configuration (e.g., .bashrc) to initialize Conda automatically at login. This may slightly slow down login times.
+
+    If you choose to initialize Conda, the following block will be added to your `.bashrc`:
+
+    ```bash
+    # >>> conda initialize >>>
+    # !! Contents within this block are managed by 'conda init' !!
+    __conda_setup="$('$HOME/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+    if [ $? -eq 0 ]; then
+        eval "$__conda_setup"
+    else
+        if [ -f "$HOME/anaconda3/etc/profile.d/conda.sh" ]; then
+            . "$HOME/anaconda3/etc/profile.d/conda.sh"
+        else
+            export PATH="$HOME/anaconda3/bin:$PATH"
+        fi
+    fi
+    unset __conda_setup
+    # <<< conda initialize <<<
+    ```
+
+    You can comment out these lines later if you prefer not to auto-initialize Conda at login.
+
+    ??? tip "If you skipped shell modification during installation but want to set the automatic Conda initialization afterward:"
+
+        ```bash
+        $ eval "$($HOME/anaconda3/bin/conda shell.bash hook)"
+        $ conda init
+        ```
+
+        This will add the configuration lines above to your .bashrc. 
+
+
+    Once the Conda is initiated, your prompt will show the base environment:
+
+    ```bash
+    (base) $
+    ```
+
+3. Create a New Environment
+
+    ```bash
+    (base) $ conda create -n someProject
+    ```
+
+    !!! tip
+        Unlike the Python virtual environment, you can install different Python versions within the Conda virtual environment. You can still create a Conda environment with the specific Python version as well.
+
+        ```bash
+        (base) $ conda create -n someProject python=<Python_version>
+        ```
+
+4. Activate the Environment
+
+    ```bash
+    (base) $ source activate someProject
+    ```
+    Your prompt will change to:
+
+    ```bash
+    (someProject) $
+    ```
+
+5. Install Packages
+
+    You can now search for and install packages. For example,
+
+    ```bash
+    (someProject) $ conda install numpy scipy matplotlib
+    ```
+    For more commands, see the [Conda Cheatsheet](https://docs.conda.io/projects/conda/en/stable/user-guide/cheatsheet.html).
+
+6. Deactivate the Environment
+
+    Once your work is done, you can get out of the Conda environment by
+
+    ```bash
+    (someProject) $ source deactivate
+    ```
+    This will return your shell to its previous state.
+
+
+!!! tip "Additional Tip"
+
+    - List the packages already installed in one of your Conda environments like so:
+        ```bash
+        $ conda list -n someProject
+        ```
+    - Remove a particular packag
+        ```bash
+        $ conda remove -n someProject opencv
+        ```
+
+    - Remove an entire Conda environment like so:
+        ```bash
+        $ conda remove -n someProject --all
+        ```
+
+    - List all remaining environments like so:
+        ```bash
+        $ conda info --envs
+        ```
+
