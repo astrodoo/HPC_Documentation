@@ -17,6 +17,7 @@ nav:
     - User Installations: software/user_installations/index.md
     - Popular Software:
       - Python: software/popular_software/python/index.md
+      - Jupyter Notebook: software/popular_software/jupyter/index.md
       - R: 
         - Personal Library: software/popular_software/R/rlibrary/index.md
         - Batch Jobs: software/popular_software/R/rbatch/index.md
